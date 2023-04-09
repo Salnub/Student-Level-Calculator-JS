@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <form >
+        Num1 : <input type="number" id="n1" placeholder="Enter your Value" <br> >
+        <br>
+        Num2 : <input type="number" id="n2" placeholder="Enter your Value" <br> >
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="*" onclick="multi()">
+        <input type="button" value="/" onclick="div()">
+        <input type="button" value="-" onclick="sub()">
+
+
+
+
+        </form>
+
+        
+        
+<script type="text/javascript">
+    function add(){
+    var num1 = parseInt( document.getElementById("n1").value);
+    var num2 = parseInt ( document.getElementById("n2").value);
+    var ans = num1 + num2;
+    document.write(ans);
+    
+    }
+    function multi(){
+    var num1 = parseInt( document.getElementById("n1").value);
+    var num2 = parseInt ( document.getElementById("n2").value);
+    var ans = num1 * num2;
+    document.write(ans);
+    
+    }
+    
+    function div(){
+    var num1 = parseInt( document.getElementById("n1").value);
+    var num2 = parseInt ( document.getElementById("n2").value);
+    var ans = num1 / num2;
+    document.write(ans);
+    
+    }
+    function sub(){
+    var num1 = parseInt( document.getElementById("n1").value);
+    var num2 = parseInt ( document.getElementById("n2").value);
+    var ans = num1 - num2;
+    document.write(ans);
+    
+    }
+   
+        </script>
+    
+
+
+
+</body>
+</html>
